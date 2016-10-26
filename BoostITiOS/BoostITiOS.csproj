@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{761F631B-F6D8-47BC-8D40-613ABB945119}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BoostITiOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>BoostITiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignKey>iPhone Distribution: Boost Motor Group, Inc. (BDWHS4YP2L)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignProvision>3f60164c-9963-4397-bdf0-41a8a4faff69</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <CodesignProvision>09298c92-5be4-4cb2-9ffe-8672b5402bf8</CodesignProvision>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>5ce594df-e626-435e-8422-5269be07847a</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Boost Motor Group, Inc. (BDWHS4YP2L)</CodesignKey>
+    <IpaPackageName>BoostITiOS-v2.8</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="zxing.ios">
+      <HintPath>..\..\..\Downloads\zxing.net.mobile-1.4.7.2\lib\ios-unified\zxing.ios.dll</HintPath>
+    </Reference>
+    <Reference Include="BoostITPortableLibrary">
+      <HintPath>..\..\..\Documents\BoostITPortableLibrary\BoostITPortableLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\57_icon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\114_icon.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\120_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\boostitred.png" />
+    <BundleResource Include="Resources\gt.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\vod.png" />
+    <BundleResource Include="Resources\bg.jpg" />
+    <BundleResource Include="Resources\editsectionbackground.png" />
+    <BundleResource Include="Resources\nophoto.png" />
+    <BundleResource Include="Resources\Overlay.png" />
+    <BundleResource Include="Resources\Overlay%402x.png" />
+    <BundleResource Include="Resources\ic_drawer.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\57_icon.png" />
+    <BundleResource Include="Resources\114_icon.png" />
+    <BundleResource Include="Resources\120_icon.png" />
+    <BundleResource Include="Resources\512_icon.png" />
+    <BundleResource Include="Resources\1024_icon.png" />
+    <BundleResource Include="Resources\AppIcons\1024_icon.png" />
+    <BundleResource Include="Resources\AppIcons\114_icon.png" />
+    <BundleResource Include="Resources\AppIcons\120_icon.png" />
+    <BundleResource Include="Resources\AppIcons\512_icon.png" />
+    <BundleResource Include="Resources\AppIcons\57_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Screens\Login.cs" />
+    <Compile Include="Screens\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\CreateVehicle.cs" />
+    <Compile Include="Screens\CreateVehicle.designer.cs">
+      <DependentUpon>CreateVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditList.cs" />
+    <Compile Include="Screens\EditList.designer.cs">
+      <DependentUpon>EditList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditGroup.cs" />
+    <Compile Include="Screens\EditGroup.designer.cs">
+      <DependentUpon>EditGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditButton.cs" />
+    <Compile Include="Screens\EditButton.designer.cs">
+      <DependentUpon>EditButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditText.cs" />
+    <Compile Include="Screens\EditText.designer.cs">
+      <DependentUpon>EditText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\EditItem.cs" />
+    <Compile Include="Screens\ListScreenController.cs" />
+    <Compile Include="Screens\ListScreenCell.cs" />
+    <Compile Include="Screens\ListScreenSource.cs" />
+    <Compile Include="Screens\ListScreenSearch.cs" />
+    <Compile Include="Screens\ListScreenSearch.designer.cs">
+      <DependentUpon>ListScreenSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\Async.cs" />
+    <Compile Include="Screens\ListScreenFeatures.cs" />
+    <Compile Include="Screens\ListScreenFeatures.designer.cs">
+      <DependentUpon>ListScreenFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Photos.cs" />
+    <Compile Include="Screens\Photos.designer.cs">
+      <DependentUpon>Photos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DamageAdd.cs" />
+    <Compile Include="Screens\DamageAdd.designer.cs">
+      <DependentUpon>DamageAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Paint.cs" />
+    <Compile Include="Screens\Paint.designer.cs">
+      <DependentUpon>Paint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Tires.cs" />
+    <Compile Include="Screens\Tires.designer.cs">
+      <DependentUpon>Tires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\Controls.cs" />
+    <Compile Include="HelperClasses\Reachability.cs" />
+    <Compile Include="HelperClasses\LoadingOverlay.cs" />
+    <Compile Include="Data\SQLite.cs" />
+    <Compile Include="Data\SQLiteBoostDB.cs" />
+    <Compile Include="HelperClasses\Graphics.cs" />
+    <Compile Include="Models\ThumbHolder.cs" />
+    <Compile Include="HelperClasses\Camera.cs" />
+    <Compile Include="Models\CameraHolder.cs" />
+    <Compile Include="HelperClasses\UIImageViewClickable.cs" />
+    <Compile Include="HelperClasses\MultiSelectController.cs" />
+    <Compile Include="Screens\DamageList.cs" />
+    <Compile Include="Screens\DamageList.designer.cs">
+      <DependentUpon>DamageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DamageListCell.cs" />
+    <Compile Include="Screens\DamageListCell.designer.cs">
+      <DependentUpon>DamageListCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ChangeVehicle.cs" />
+    <Compile Include="Screens\ChangeVehicle.designer.cs">
+      <DependentUpon>ChangeVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ChangeVehicleCell.cs" />
+    <Compile Include="Screens\ChangeVehicleCell.designer.cs">
+      <DependentUpon>ChangeVehicleCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UploadList.cs" />
+    <Compile Include="Screens\UploadList.designer.cs">
+      <DependentUpon>UploadList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UploadListDealers.cs" />
+    <Compile Include="Screens\UploadListDealers.designer.cs">
+      <DependentUpon>UploadListDealers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\UploadProgress.cs" />
+    <Compile Include="Screens\UploadProgress.designer.cs">
+      <DependentUpon>UploadProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageForUpload.cs" />
+    <Compile Include="HelperClasses\ToastOverlay.cs" />
+    <Compile Include="Screens\DownloadVehicles.cs" />
+    <Compile Include="Screens\DownloadVehicles.designer.cs">
+      <DependentUpon>DownloadVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\FileCache.cs" />
+    <Compile Include="Models\VehicleForDownloadWithImage.cs" />
+    <Compile Include="HelperClasses\GzipWebClient.cs" />
+    <Compile Include="Screens\Home.cs" />
+    <Compile Include="Screens\Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zxing\AVCaptureScannerView.cs" />
+    <Compile Include="zxing\AVCaptureScannerViewController.cs" />
+    <Compile Include="zxing\IScannerViewController.cs" />
+    <Compile Include="zxing\MobileBarcodeScanner.cs" />
+    <Compile Include="zxing\ZXingDefaultOverlayView.cs" />
+    <Compile Include="zxing\ZXingScannerView.cs" />
+    <Compile Include="zxing\ZXingScannerViewController.cs" />
+    <Compile Include="zxing\CameraResolution.cs" />
+    <Compile Include="zxing\IMobileBarcodeScanner.cs" />
+    <Compile Include="zxing\MobileBarcodeScanningOptions.cs" />
+    <Compile Include="zxing\Performance.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Screens\" />
+    <Folder Include="HelperClasses\" />
+    <Folder Include="Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="zxing\" />
+    <Folder Include="Resources\AppIcons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Screens\Login.xib" />
+    <InterfaceDefinition Include="Screens\CreateVehicle.xib" />
+    <InterfaceDefinition Include="Screens\EditList.xib" />
+    <InterfaceDefinition Include="Resources\Screens\EditListCell.xib" />
+    <InterfaceDefinition Include="Screens\EditGroup.xib" />
+    <InterfaceDefinition Include="Screens\EditButton.xib" />
+    <InterfaceDefinition Include="Screens\EditText.xib" />
+    <InterfaceDefinition Include="Screens\ListScreenSearch.xib" />
+    <InterfaceDefinition Include="Screens\ListScreenFeatures.xib" />
+    <InterfaceDefinition Include="Screens\Photos.xib" />
+    <InterfaceDefinition Include="Screens\DamageAdd.xib" />
+    <InterfaceDefinition Include="Screens\Paint.xib" />
+    <InterfaceDefinition Include="Screens\Tires.xib" />
+    <InterfaceDefinition Include="Screens\DamageList.xib" />
+    <InterfaceDefinition Include="Screens\DamageListCell.xib" />
+    <InterfaceDefinition Include="Screens\ChangeVehicle.xib" />
+    <InterfaceDefinition Include="Screens\ChangeVehicleCell.xib" />
+    <InterfaceDefinition Include="Screens\UploadList.xib" />
+    <InterfaceDefinition Include="Screens\UploadListDealers.xib" />
+    <InterfaceDefinition Include="Screens\UploadProgress.xib" />
+    <InterfaceDefinition Include="Screens\DownloadVehicles.xib" />
+    <InterfaceDefinition Include="Screens\Home.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>

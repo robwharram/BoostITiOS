@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadProgress">
+            <connections>
+                <outlet property="btnCancel" destination="ZlF-TC-AgO" id="6Dc-NN-icP"/>
+                <outlet property="btnPause" destination="CNg-H4-fDS" id="0w3-Hz-Gfg"/>
+                <outlet property="lblCurrentVehicle" destination="CKc-VO-j7s" id="jbY-WT-lf7"/>
+                <outlet property="lblPrepareImage" destination="LKk-0W-onk" id="ywA-9H-ivN"/>
+                <outlet property="lblTotal" destination="xLv-ga-rfd" id="D5x-ZH-UYC"/>
+                <outlet property="nbUpload" destination="Juz-dM-Azx" id="TWh-X3-RfI"/>
+                <outlet property="pbCurrentVehicle" destination="8YD-op-S5G" id="4zw-iR-xGy"/>
+                <outlet property="pbPrepareImage" destination="YL0-tP-9zE" id="F5k-vP-dd7"/>
+                <outlet property="pbTotal" destination="N12-Bm-DB3" id="vOB-Ij-jXi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kCW-yf-GMq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Juz-dM-Azx">
+                    <rect key="frame" x="0.0" y="18" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="Upload Progress" id="fev-oQ-nB6">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="ZlF-TC-AgO"/>
+                            <barButtonItem key="rightBarButtonItem" title="Pause" id="CNg-H4-fDS"/>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prepare Image Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKk-0W-onk">
+                    <rect key="frame" x="8" y="104" width="304" height="21"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Upload Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-ga-rfd">
+                    <rect key="frame" x="8" y="158" width="304" height="21"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Vehicle Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKc-VO-j7s">
+                    <rect key="frame" x="8" y="214" width="304" height="21"/>
+                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="N12-Bm-DB3">
+                    <rect key="frame" x="8" y="148" width="304" height="2"/>
+                </progressView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8YD-op-S5G">
+                    <rect key="frame" x="8" y="204" width="304" height="2"/>
+                </progressView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-tP-9zE">
+                    <rect key="frame" x="8" y="94" width="304" height="2"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="165" y="325"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

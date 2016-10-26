@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>BoostIT</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MinimumOSVersion</key>
+	<string>8.0</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+	</array>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>gt.otf</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.boostmotorgroup.boostit</string>
+	<key>UIMainNibFile</key>
+	<string>Screens/Login</string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>XSLaunchImageAssets</key>
+	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.8</string>
+	<key>CFBundleVersion</key>
+	<string>2.8</string>
+	<key>CFBundleName</key>
+	<string>BoostIT</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app uses the camera to add photos to vehicles</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app uses your photo libary to add photos to vehicles</string>
+</dict>
+</plist>
